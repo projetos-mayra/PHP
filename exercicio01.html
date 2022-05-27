@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 01 - Verifica País </title>
+    <title>Exercicio 01</title>
 </head>
 <body>
-    <h1>DESCUBRA SUA NACIONALIDADE</h1>
-    <p>Qual seu país de Nascença:<input type="text" name="is" id="is"> </p>
-    <input type="button" value="VERIFICAR" onclick="Pais()">
-    <div id="resultado"></div>
+    <form action="processa01.php" method="POST" class="form">
 
+        
+        <h2>Digite a Temperatura:   
+        <input type="number" name="temp">
+        </h2>
 
-    <script>
-    res.innerHTML = `Voce nasceu em ${pais}`
-    if(pais='BRA'){
-                res.innerHTML +=
-                `<p>por isso voce é<strong>Brasileiro!!</strong></p>`
-            }
-            res.innerHTML = `por isso voce é ESTRANGEIRO </p>`
-        }
-    </script>
-    
+        <h2>
+            Digite 1 para farenheit.<br>
+
+            Digite 2 para celsius.
+        <input type="number" name="grau">
+        </h2>
+
+        <p><input type="submit" value="Calcular">
+        </p>
+    </form>
 </body>
 </html>
